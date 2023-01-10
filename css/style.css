@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', 'Arial', 'Helvetica';
+}
+
+body{
+    color: white;
+}
+
+div.clear{
+    clear: both;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../imagens/pecas-bg.jpg") ;
+    background-size: cover;
+}
+
+header div.desfoque{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.619);
+
+}
+
+header ul.servicos-mobile{
+    display: none;
+}
+
+header ul.servicos-desktop{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4%;
+    list-style: none;
+}
+
+ul.servicos-desktop li{
+    position: relative;
+    min-width: 380px;
+    max-height: 190px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.574);
+    border-radius: 50px;
+}
+
+ul.servicos-desktop div.img-nav{
+    display: inline-block;
+    width: 200px;
+    height: 180px;
+    margin: auto 0;
+    padding: 10px;
+}
+
+div.img-nav img{
+    width: 100%;
+    height: 100%;
+}
+
+ul.servicos-desktop li a{
+    position: absolute;
+    min-width: 170px;
+    left: 50%;
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color:rgb(34, 25, 211);
+    border: 1px solid rgb(249, 241, 25);
+    border-radius: 50px;
+}
+
+ul.servicos-desktop li a:hover{
+    background-color: rgba(251, 0, 0, 0.738);
+    border: none;
+}
+
+ul.servicos-desktop li p{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    left: 52%;
+    top: 60%;
+    color: #222;
+}
+
+header div.text-oficina{
+    z-index: 2;
+    position: absolute;
+    max-width: 500px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7%;
+    padding: 50px;
+    color: #222;
+    background-color: rgba(255, 255, 255, 0.694);
+    border-radius: 30px;
+}
+
+div.text-oficina h1{
+    font-size: 2.1em;
+    line-height: 38px;
+}
+
+div.text-oficina h1 span{
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(35, 25, 211);
+}
+
+div.text-oficina h2{
+    font-size: 1.6em;
+    margin-top: 18px;
+    text-align: center;
+    color: rgba(251, 0, 0, 0.738);
+}
+
+div.text-oficina p{
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+div.text-oficina div.bnt-contato{
+    font-size: 23px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+div.bnt-contato a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 15px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(34, 25, 211);
+    border: 1px solid rgb(249, 241, 25);
+    border-radius: 50px;
+}
+
+div.bnt-contato a:hover{
+    font-size: 29px;
+    background-color: rgba(251, 0, 0, 0.738);
+    border: none;
+}
+
+div.bnt-contato a i{
+    font-size: 1.2em;
+    margin-right: 8px;
+}
+
+section.client{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(211, 211, 211);
+}
+
+section.client ul{
+    color: #222;
+    padding: 0 50px;
+}
+
+section.client li.card-client{
+    display: inline-block;
+    max-width: 33%;
+    margin: 50px 0;
+}
+
+li.card-client div.image{
+    width: 150px;
+    height: 150px;
+    margin: 0 50%;
+    transform: translateX(-50%);
+}
+
+div.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+li.card-client p{
+    min-height: 330px;
+    font-size: 17px;
+    text-align: justify;
+    padding: 10px 20px;
+}
+
+li.card-client p span{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 25px;
+    
+}
+
+section.client div.chamadas2{
+    max-width: 500px;
+    text-align: center;
+    margin: 10px auto;
+    padding-bottom: 25px;
+}
+
+footer.info-oficina{
+    background-color: rgb(42, 42, 42);
+}
+
+footer.info-oficina div.horario-local{
+    width: 50%;
+    float: left;
+    padding: 30px;
+}
+
+div.horario-local h4{
+    font-size: 24px;
+    margin: 20px 40px;
+}
+
+div.horario-local ul{
+    margin-left: 40px;
+    list-style: none;
+}
+
+div.horario-local li{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+div.horario-local li span{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 69, 69);
+}
+
+@media screen and (max-width: 1002px){
+    header ul.servicos-desktop{
+        display: none;
+    }
+
+    header ul.servicos-mobile{
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        list-style: none;
+        background-color: rgb(34, 25, 211);
+    }
+
+    ul.servicos-mobile li{
+        float: right;
+        margin-top: 15px;
+    }
+
+    ul.servicos-mobile li.logo{
+        float: left;
+        font-size: 2em;
+        font-weight: 600;
+        margin: auto 0;
+        padding: 8px 0 8px 30px ;
+        color: white;
+    }
+
+    ul.servicos-mobile a{
+        text-decoration: none;
+        font-size: 1.3em;
+        margin: 0 10px;
+        padding: 10px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 12px;
+    }
+
+
+    header div.text-oficina{
+        position: relative;
+        top: 45%;
+        right: 0;
+        margin: auto;
+        padding: 20px 30px;
+    }
+
+    section.client{
+        max-width: 80%;
+    }
+
+    section.client li.card-client{
+        max-width: 100%;
+        display: block;
+        margin-top: 0;
+        padding-top: 40px;
+    }
+
+    li.card-client div.image{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 15px;
+    }
+
+    li.card-client p{
+        max-width: 80%;
+        min-height: 0;
+        margin: auto;
+        font-size: 22px;
+    }
+
+    li.card-client p span{
+        font-size: 25px;
+    }
+
+    section.client div.chamadas2{
+        max-width: 70%;
+        margin: 0px auto;
+        font-size: 25px;
+    }
+
+    div.chamadas2 a{
+        width: 100%;
+        margin: 30px 0;
+        padding: 5px;
+    }
+
+
+}
+
+@media screen and (max-width:675px){
+    header{
+        padding: 8px;
+    }
+    header ul.servicos-mobile{
+        position: absolute;
+        z-index: 2;
+        height: 50px;
+        top: 0;
+        left: 0;
+        list-style: none;
+        background-color: rgb(34, 25, 211);
+    }
+
+    ul.servicos-mobile li{
+        width: 33.3%;    
+    }
+
+    ul.servicos-mobile li.logo{
+        display: none;
+    }
+
+    ul.servicos-mobile a{
+        font-size: 1.2em;
+        padding: 7px;
+    }
+
+    header div.text-oficina{
+        max-width: 400px;
+        top: 75%;
+        transform: translateY(-72%);
+        padding: 20px 8px 0px 8px;
+    }
+
+    div.text-oficina h1{
+        font-size: 1.7em;
+        line-height: 32px;
+        text-align: center;
+    }
+        
+    div.text-oficina h2{
+        font-size: 1.3em;
+        margin-top: 10px;
+    }
+        
+    div.text-oficina p{
+        font-size: 1.1em;
+        text-align: center;
+    }
+        
+    div.text-oficina div.bnt-contato{
+        margin-top: 25px;
+    }
+        
+    div.bnt-contato a{
+        font-size: 1em;
+        margin: 25px;
+    }
+        
+    div.bnt-contato a:hover{
+            font-size: 1em;
+    }
+
+    section.client{
+        max-width: 100%;
+    }
+
+    section.client div.image{
+        padding: 20px;
+    }
+
+     li.card-client p{
+        max-width: 100%;
+        font-size: 17px;
+        padding: 0;
+    }
+
+    footer.info-oficina div.horario-local{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    div.horario-local h4{
+        margin: 20px 7px 10px 7px;
+    }
+
+}
